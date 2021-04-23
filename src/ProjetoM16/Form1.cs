@@ -38,5 +38,9 @@ namespace ProjetoM16
             fnumero2.ShowDialog();
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
