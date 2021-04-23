@@ -31,5 +31,31 @@ namespace ProjetoM16
         {
 
         }
+
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "admin" && textBox2.Text == "1234")
+            {
+                Form4 fnumero4 = new Form4();
+                fnumero4.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("pass ou login invalidos");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 fnumero3 = new Form3();
+            fnumero3.ShowDialog();
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
