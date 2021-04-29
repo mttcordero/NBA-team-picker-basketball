@@ -17,25 +17,71 @@ namespace ProjetoM16
             InitializeComponent();
         }
 
-        private void comboBox7_SelectedIndexChanged(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            if(comboBox7.Text == "Divisão Sudoeste")
+            if (comboBox2.Text != null)
             {
-                textBox1.Text = ("Dallas Mavericks" +
-                    " Houston Rocket" +
-                    " Memphis Grizzlies" +
-                    " New Orleans Pelicans" +
-                    " San Antonio Spurs");
+                equipas fequipas5 = new equipas();
+                fequipas5.ShowDialog();
+            }
+
+        }
+
+        public void button1_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.Text != null)
+            {
+                equipas fequipas5 = new equipas();
+                fequipas5.ShowDialog();
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            if(comboBox2.Text == "Chicago Bulls")
+            if (comboBox3.Text != null)
             {
-                MessageBox.Show("funcionou");
+                equipas fequipas5 = new equipas();
+                fequipas5.ShowDialog();
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (comboBox4.Text != null)
+            {
+                equipas fequipas5 = new equipas();
+                fequipas5.ShowDialog();
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (comboBox4.Text != null)
+            {
+                equipas fequipas5 = new equipas();
+                fequipas5.ShowDialog();
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (comboBox4.Text != null)
+            {
+                equipas fequipas5 = new equipas();
+                fequipas5.ShowDialog();
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public static void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+        
     }
 }
 
