@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoM16.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,22 +9,38 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace ProjetoM16
 {
     public partial class equipas : Form
     {
+
+        public string NomeEquipa { get; set; }
         public equipas()
         {
             InitializeComponent();
         }
 
-        private static void equipas_Load(object sender, EventArgs e)
+        public void Configurar()
         {
-            
-            {
-               
-            }
+            if (NomeEquipa.Contains("miami"))
+                BackgroundImage = Resources.miamiheat;
+
+            if (NomeEquipa.Contains("houston"))
+                BackgroundImage = Resources.houston_rockets;
+
+            if (NomeEquipa.Contains("celtics"))
+                BackgroundImage = Resources.boston_celtics;
+
+            if (NomeEquipa.Contains("houston"))
+                BackgroundImage = Resources.houston_rockets;
+
+            if (NomeEquipa.Contains("houston"))
+                BackgroundImage = Resources.houston_rockets;
+
+            if (NomeEquipa.Contains("houston"))
+                BackgroundImage = Resources.houston_rockets;
+
         }
+
     }
 }

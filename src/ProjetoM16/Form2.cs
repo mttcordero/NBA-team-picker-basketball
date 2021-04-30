@@ -17,10 +17,6 @@ namespace ProjetoM16
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
@@ -32,6 +28,7 @@ namespace ProjetoM16
             if(textBox1.Text == "admin" && textBox2.Text == "1234")
             {
                 Form4 fnumero4 = new Form4();
+                this.Hide();
                 fnumero4.ShowDialog();
             }
         }

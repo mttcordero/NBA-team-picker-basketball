@@ -118,7 +118,91 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="unnamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unnamed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="atlanta_hawks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\atlanta hawks.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bobcats" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bobcats.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boston_celtics" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\boston celtics.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bucks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bucks.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cavaliers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cavaliers.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chicago_bulls" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chicago bulls.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clippers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clippers.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="golden_state_warriors" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\golden state warriors.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hornets" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\hornets.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="houston_rockets" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\houston rockets.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jazz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\jazz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\kings.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="knicks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\knicks.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lakers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\lakers.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\magic.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mavericks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mavericks.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="memphis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\memphis.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="miamiheat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\miamiheat.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nets" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\nets.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nuggets" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\nuggets.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pacers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\pacers.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phoenix_suns" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\phoenix suns.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pistons" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\pistons.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="raptors" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\raptors.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spurs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\spurs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thunder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\thunder.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="timberwolves" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\timberwolves.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trail_blazzers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\trail blazzers.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_76ers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\76ers.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

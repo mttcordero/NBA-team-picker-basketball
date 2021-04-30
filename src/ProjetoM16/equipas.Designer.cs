@@ -33,12 +33,12 @@ namespace ProjetoM16
             // 
             // equipas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(534, 450);
             this.Name = "equipas";
             this.Text = "equipas";
-            this.Load += new System.EventHandler(this.equipas_Load);
             this.ResumeLayout(false);
 
         }

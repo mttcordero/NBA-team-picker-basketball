@@ -46,8 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="comboBox1.cs" />
     <Compile Include="equipas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,18 +95,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -118,10 +116,42 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="Resources\houston rockets.jpg" />
-    <Content Include="Resources\miami heat.jpg" />
+    <Resource Include="Resources\houston rockets.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\miamiheat.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\76ers.jpg" />
+    <Content Include="Resources\atlanta hawks.jpg" />
+    <Content Include="Resources\bobcats.jpg" />
+    <Content Include="Resources\boston celtics.jpg" />
+    <Content Include="Resources\bucks.jpg" />
+    <Content Include="Resources\cavaliers.jpg" />
+    <Content Include="Resources\chicago bulls.jpg" />
+    <Content Include="Resources\clippers.jpg" />
+    <Content Include="Resources\golden state warriors.jpg" />
+    <Content Include="Resources\hornets.jpg" />
+    <Content Include="Resources\jazz.jpg" />
+    <Content Include="Resources\kings.jpg" />
+    <Content Include="Resources\knicks.jpg" />
+    <Content Include="Resources\lakers.jpg" />
+    <Content Include="Resources\magic.jpg" />
+    <Content Include="Resources\mavericks.jpg" />
+    <Content Include="Resources\memphis.jpg" />
+    <Content Include="Resources\nets.jpg" />
+    <Content Include="Resources\nuggets.jpg" />
+    <Content Include="Resources\pacers.jpg" />
+    <Content Include="Resources\phoenix suns.jpg" />
+    <Content Include="Resources\pistons.jpg" />
+    <Content Include="Resources\raptors.jpg" />
+    <Content Include="Resources\spurs.jpg" />
+    <Content Include="Resources\thunder.jpg" />
+    <Content Include="Resources\timberwolves.jpg" />
+    <Content Include="Resources\trail blazzers.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

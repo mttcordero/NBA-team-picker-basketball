@@ -17,11 +17,13 @@ namespace ProjetoM16
             InitializeComponent();
         }
 
+
         private void button2_Click(object sender, EventArgs e)
         {
             if (comboBox2.Text != null)
             {
                 equipas fequipas5 = new equipas();
+                this.Hide();
                 fequipas5.ShowDialog();
             }
 
@@ -32,6 +34,9 @@ namespace ProjetoM16
             if (comboBox1.Text != null)
             {
                 equipas fequipas5 = new equipas();
+                fequipas5.NomeEquipa = comboBox1.Text.ToLowerInvariant();
+                fequipas5.Configurar();
+                this.Hide();
                 fequipas5.ShowDialog();
             }
         }
@@ -41,6 +46,7 @@ namespace ProjetoM16
             if (comboBox3.Text != null)
             {
                 equipas fequipas5 = new equipas();
+                this.Hide();
                 fequipas5.ShowDialog();
             }
         }
@@ -50,6 +56,7 @@ namespace ProjetoM16
             if (comboBox4.Text != null)
             {
                 equipas fequipas5 = new equipas();
+                this.Hide();
                 fequipas5.ShowDialog();
             }
         }
@@ -59,6 +66,7 @@ namespace ProjetoM16
             if (comboBox4.Text != null)
             {
                 equipas fequipas5 = new equipas();
+                this.Hide();
                 fequipas5.ShowDialog();
             }
         }
@@ -68,20 +76,16 @@ namespace ProjetoM16
             if (comboBox4.Text != null)
             {
                 equipas fequipas5 = new equipas();
+                this.Hide();
                 fequipas5.ShowDialog();
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
         }
-
-        public static void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-        
     }
 }
 

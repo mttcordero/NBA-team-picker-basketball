@@ -60,13 +60,15 @@ namespace ProjetoM16
             "Brooklyn Nets",
             "New York Knicks",
             "Philadelphia 76ers",
-            "Toronto Raptors"});
+            "Toronto Raptors",
+            "Miami Heat",
+            "Houston Rockets"});
             this.comboBox1.Location = new System.Drawing.Point(159, 114);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(10);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 1;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
             // 
             // label1
             // 
@@ -79,7 +81,6 @@ namespace ProjetoM16
             this.label1.Size = new System.Drawing.Size(68, 16);
             this.label1.TabIndex = 2;
             this.label1.Text = "Atlântico";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -281,7 +282,7 @@ namespace ProjetoM16
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(539, 347);
+            this.ClientSize = new System.Drawing.Size(538, 348);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
