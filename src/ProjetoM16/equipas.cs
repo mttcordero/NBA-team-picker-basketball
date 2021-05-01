@@ -15,15 +15,27 @@ namespace ProjetoM16
     {
 
         public string NomeEquipa { get; set; }
+
+        public string NomeJogador { get; set; }
         public equipas()
         {
             InitializeComponent();
         }
 
+       public void DefenirJogador()
+        {
+            if (NomeEquipa.Contains("celtics"))
+            {
+               comboBox1.Text = ("JAYLEN BROWN");
+            }
+
+
+        }
         public void Configurar()
         {
             if (NomeEquipa.Contains("miami"))
                 BackgroundImage = Resources.miamiheat;
+            // funciona falta por nome dos jogadores   comboBox1.Text = "jjjjjjj";
 
             if (NomeEquipa.Contains("houston"))
                 BackgroundImage = Resources.houston_rockets;
@@ -42,5 +54,10 @@ namespace ProjetoM16
 
         }
 
+        
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
