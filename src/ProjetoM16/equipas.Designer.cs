@@ -36,7 +36,7 @@ namespace ProjetoM16
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(534, 450);
+            this.ClientSize = new System.Drawing.Size(523, 553);
             this.Name = "equipas";
             this.Text = "equipas";
             this.ResumeLayout(false);
