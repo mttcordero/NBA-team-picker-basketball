@@ -29,14 +29,29 @@ namespace ProjetoM16
         /// </summary>
         private void InitializeComponent()
         {
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(129, 75);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(140, 21);
+            this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // equipas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(523, 553);
+=======
+            this.ClientSize = new System.Drawing.Size(319, 306);
+            this.Controls.Add(this.comboBox1);
+>>>>>>> 8f9c975d1c1b51f1ef44cd73ea8f21a8f98f997d
             this.Name = "equipas";
             this.Text = "equipas";
             this.ResumeLayout(false);
@@ -44,5 +59,7 @@ namespace ProjetoM16
         }
 
         #endregion
+
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

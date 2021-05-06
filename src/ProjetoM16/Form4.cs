@@ -38,6 +38,7 @@ namespace ProjetoM16
                 fequipas5.Configurar();
                 this.Hide();
                 fequipas5.ShowDialog();
+                
             }
         }
 
@@ -82,10 +83,7 @@ namespace ProjetoM16
         }
 
 
-        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }
 

@@ -32,5 +32,10 @@ namespace ProjetoM16
                 fnumero4.ShowDialog();
             }
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
