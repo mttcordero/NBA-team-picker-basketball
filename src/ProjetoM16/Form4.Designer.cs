@@ -60,15 +60,12 @@ namespace ProjetoM16
             "Brooklyn Nets",
             "New York Knicks",
             "Philadelphia 76ers",
-            "Toronto Raptors",
-            "Miami Heat",
-            "Houston Rockets"});
+            "Toronto Raptors"});
             this.comboBox1.Location = new System.Drawing.Point(159, 114);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(10);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 1;
-            
             // 
             // label1
             // 

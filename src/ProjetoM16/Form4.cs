@@ -38,7 +38,6 @@ namespace ProjetoM16
                 fequipas5.Configurar();
                 this.Hide();
                 fequipas5.ShowDialog();
-                
             }
         }
 

@@ -24,24 +24,22 @@ namespace ProjetoM16
 
        public void DefenirJogador()
         {
-            if (NomeEquipa.Contains("celtics"))
-            {
-               comboBox1.Text = ("JAYLEN BROWN");
-            }
-
+          
 
         }
         public void Configurar()
         {
+
             if (NomeEquipa.Contains("76"))
-                BackgroundImage = Resources.miamiheat;
-            // funciona falta por nome dos jogadores   comboBox1.Text = "jjjjjjj";
+                BackgroundImage = Resources._76ers;
+
 
             if (NomeEquipa.Contains("atlanta"))
                 BackgroundImage = Resources.houston_rockets;
 
-            if (NomeEquipa.Contains("bobcats"))
+            if (NomeEquipa.Contains(/*"bobcats"*/"celtics"))
                 BackgroundImage = Resources.boston_celtics;
+            
 
             if (NomeEquipa.Contains("boston"))
                 BackgroundImage = Resources.houston_rockets;
@@ -84,6 +82,58 @@ namespace ProjetoM16
 
             if (NomeEquipa.Contains("mavericks"))
                 BackgroundImage = Resources.houston_rockets;
+
+            if (NomeEquipa.Contains("celtics"))
+                BackgroundImage = Resources.houston_rockets;
+
+            if (NomeEquipa.Contains("memphis"))
+                BackgroundImage = Resources.houston_rockets;
+
+            if (NomeEquipa.Contains("heat"))
+                BackgroundImage = Resources.houston_rockets;
+
+            if (NomeEquipa.Contains("nets"))
+                BackgroundImage = Resources.houston_rockets;
+
+            if (NomeEquipa.Contains("nuggets"))
+                BackgroundImage = Resources.houston_rockets;
+
+            if (NomeEquipa.Contains("pacers"))
+                BackgroundImage = Resources.houston_rockets;
+
+            if (NomeEquipa.Contains("wizards"))
+                BackgroundImage = Resources.miamiheat;
+            comboBox1.Text = "";
+
+            if (NomeEquipa.Contains("phoenix"))
+                BackgroundImage = Resources.miamiheat;
+            comboBox1.Text = "";
+
+            if (NomeEquipa.Contains("pistons"))
+                BackgroundImage = Resources.miamiheat;
+            comboBox1.Text = "";
+
+            if (NomeEquipa.Contains("raptors"))
+                BackgroundImage = Resources.miamiheat;
+            comboBox1.Text = "";
+
+            if (NomeEquipa.Contains("spurs"))
+                BackgroundImage = Resources.miamiheat;
+            comboBox1.Text = "";
+
+            if (NomeEquipa.Contains("thunder"))
+                BackgroundImage = Resources.miamiheat;
+            comboBox1.Text = "";
+
+            if (NomeEquipa.Contains("timberwolves"))
+                BackgroundImage = Resources.miamiheat;
+
+
+            // ligar à bd
+            // consultar jogadores da equipa
+            // por cada jogador, adicionar à combox ou fazer o databind da combobox aos resultados da consulta à bd.
+
+
 
         }
 
