@@ -23,6 +23,8 @@ namespace ProjetoM16
             if (comboBox2.Text != null)
             {
                 equipas fequipas5 = new equipas();
+                fequipas5.NomeEquipa = comboBox2.Text.ToLowerInvariant();
+                fequipas5.Configurar();
                 this.Hide();
                 fequipas5.ShowDialog();
             }
@@ -46,6 +48,8 @@ namespace ProjetoM16
             if (comboBox3.Text != null)
             {
                 equipas fequipas5 = new equipas();
+                fequipas5.NomeEquipa = comboBox3.Text.ToLowerInvariant();
+                fequipas5.Configurar();
                 this.Hide();
                 fequipas5.ShowDialog();
             }
@@ -56,6 +60,8 @@ namespace ProjetoM16
             if (comboBox4.Text != null)
             {
                 equipas fequipas5 = new equipas();
+                fequipas5.NomeEquipa = comboBox4.Text.ToLowerInvariant();
+                fequipas5.Configurar();
                 this.Hide();
                 fequipas5.ShowDialog();
             }
@@ -63,9 +69,11 @@ namespace ProjetoM16
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if (comboBox4.Text != null)
+            if (comboBox5.Text != null)
             {
                 equipas fequipas5 = new equipas();
+                fequipas5.NomeEquipa = comboBox5.Text.ToLowerInvariant();
+                fequipas5.Configurar();
                 this.Hide();
                 fequipas5.ShowDialog();
             }
@@ -73,9 +81,11 @@ namespace ProjetoM16
 
         private void button6_Click(object sender, EventArgs e)
         {
-            if (comboBox4.Text != null)
+            if (comboBox6.Text != null)
             {
                 equipas fequipas5 = new equipas();
+                fequipas5.NomeEquipa = comboBox6.Text.ToLowerInvariant();
+                fequipas5.Configurar();
                 this.Hide();
                 fequipas5.ShowDialog();
             }
