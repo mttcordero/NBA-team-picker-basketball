@@ -24,6 +24,7 @@ namespace ProjetoM16
 
        public void DefenirJogador()
         {
+          if(NomeEquipa.Contains("76"))
           
 
         }
@@ -123,9 +124,11 @@ namespace ProjetoM16
             // consultar jogadores da equipa
             // por cada jogador, adicionar à combox ou fazer o databind da combobox aos resultados da consulta à bd.
 
-
-
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
