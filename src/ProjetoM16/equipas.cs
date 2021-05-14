@@ -8,11 +8,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ProjetoM16
 {
     public partial class equipas : Form
     {
+        SqlConnection conn = new SqlConnection(@"");
+
+
+        sqlConnection db = new sqlConnection();
+
+
+
 
         public string NomeEquipa { get; set; }
 
@@ -24,7 +32,7 @@ namespace ProjetoM16
 
        public void DefenirJogador()
         {
-          if(NomeEquipa.Contains("76"))
+            if (NomeEquipa.Contains("76")) ;
           
 
         }
@@ -124,11 +132,22 @@ namespace ProjetoM16
             // consultar jogadores da equipa
             // por cada jogador, adicionar à combox ou fazer o databind da combobox aos resultados da consulta à bd.
 
+            ConnectionString = "Data Source=devlabpm.westeurope.cloudapp.azure.com;Initial Catalog=PSIM1619I_MatteoCordero_2219132;Persist Security Info=True;User ID=PSIM1619I_MatteoCordero_2219132;Password=7bJ12028";
         }
+        
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (NomeEquipa.Contains("nets"))
+            {
 
+            }
+        }
+
+        private void equipas_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'pSIM1619I_MatteoCordero_2219132DataSet1.Jogadores' table. You can move, or remove it, as needed.
+            this.jogadoresTableAdapter.Fill(this.pSIM1619I_MatteoCordero_2219132DataSet1.Jogadores);
         }
     }
 }
