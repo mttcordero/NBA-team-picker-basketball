@@ -93,17 +93,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PSIM1619I_MatteoCordero_2219132DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PSIM1619I_MatteoCordero_2219132DataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PSIM1619I_MatteoCordero_2219132DataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PSIM1619I_MatteoCordero_2219132DataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="sqlConnection.cs" />
     <EmbeddedResource Include="equipas.resx">
       <DependentUpon>equipas.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,28 +128,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="PSIM1619I_MatteoCordero_2219132DataSet.xsc">
-      <DependentUpon>PSIM1619I_MatteoCordero_2219132DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="PSIM1619I_MatteoCordero_2219132DataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PSIM1619I_MatteoCordero_2219132DataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PSIM1619I_MatteoCordero_2219132DataSet.xss">
-      <DependentUpon>PSIM1619I_MatteoCordero_2219132DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="PSIM1619I_MatteoCordero_2219132DataSet1.xsc">
-      <DependentUpon>PSIM1619I_MatteoCordero_2219132DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="PSIM1619I_MatteoCordero_2219132DataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PSIM1619I_MatteoCordero_2219132DataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PSIM1619I_MatteoCordero_2219132DataSet1.xss">
-      <DependentUpon>PSIM1619I_MatteoCordero_2219132DataSet1.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -32,8 +32,6 @@ namespace ProjetoM16
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.equipasAtlanticoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pSIM1619I_MatteoCordero_2219132DataSet = new ProjetoM16.PSIM1619I_MatteoCordero_2219132DataSet();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,8 +41,8 @@ namespace ProjetoM16
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.equipasCentralBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.equipasSudoesteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label6 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -53,49 +51,19 @@ namespace ProjetoM16
             this.button6 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.equipasAtlanticoTableAdapter = new ProjetoM16.PSIM1619I_MatteoCordero_2219132DataSetTableAdapters.equipasAtlanticoTableAdapter();
-            this.equipasCentralTableAdapter = new ProjetoM16.PSIM1619I_MatteoCordero_2219132DataSetTableAdapters.equipasCentralTableAdapter();
-            this.equipasSudesteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.equipasSudesteTableAdapter = new ProjetoM16.PSIM1619I_MatteoCordero_2219132DataSetTableAdapters.equipasSudesteTableAdapter();
-            this.equipasNoroesteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.equipasNoroesteTableAdapter = new ProjetoM16.PSIM1619I_MatteoCordero_2219132DataSetTableAdapters.equipasNoroesteTableAdapter();
-            this.equipasPacificoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.equipasPacificoTableAdapter = new ProjetoM16.PSIM1619I_MatteoCordero_2219132DataSetTableAdapters.equipasPacificoTableAdapter();
-            this.pSIM1619IMatteoCordero2219132DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.equipasSudoesteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.equipasSudoesteTableAdapter = new ProjetoM16.PSIM1619I_MatteoCordero_2219132DataSetTableAdapters.equipasSudoesteTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.equipasAtlanticoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pSIM1619I_MatteoCordero_2219132DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.equipasCentralBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.equipasSudesteBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.equipasNoroesteBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.equipasPacificoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pSIM1619IMatteoCordero2219132DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.equipasSudoesteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox1
             // 
-            this.comboBox1.DataSource = this.equipasAtlanticoBindingSource;
-            this.comboBox1.DisplayMember = "nomeEquipa";
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(159, 114);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(10);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 1;
-            this.comboBox1.ValueMember = "nomeEquipa";
-            // 
-            // equipasAtlanticoBindingSource
-            // 
-            this.equipasAtlanticoBindingSource.DataMember = "equipasAtlantico";
-            this.equipasAtlanticoBindingSource.DataSource = this.pSIM1619I_MatteoCordero_2219132DataSet;
-            // 
-            // pSIM1619I_MatteoCordero_2219132DataSet
-            // 
-            this.pSIM1619I_MatteoCordero_2219132DataSet.DataSetName = "PSIM1619I_MatteoCordero_2219132DataSet";
-            this.pSIM1619I_MatteoCordero_2219132DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            
             // 
             // label1
             // 
@@ -155,64 +123,44 @@ namespace ProjetoM16
             // 
             // comboBox2
             // 
-            this.comboBox2.DataSource = this.equipasCentralBindingSource;
-            this.comboBox2.DisplayMember = "nomeEquipa";
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(159, 143);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 7;
-            this.comboBox2.ValueMember = "nomeEquipa";
             // 
             // comboBox3
             // 
-            this.comboBox3.DataSource = this.equipasSudesteBindingSource;
-            this.comboBox3.DisplayMember = "nomeEquipa";
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(159, 169);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(121, 21);
             this.comboBox3.TabIndex = 8;
-            this.comboBox3.ValueMember = "nomeEquipa";
             // 
             // comboBox4
             // 
-            this.comboBox4.DataSource = this.equipasNoroesteBindingSource;
-            this.comboBox4.DisplayMember = "nomeEquipa";
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(159, 196);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(121, 21);
             this.comboBox4.TabIndex = 9;
-            this.comboBox4.ValueMember = "nomeEquipa";
             // 
             // comboBox5
             // 
-            this.comboBox5.DataSource = this.equipasPacificoBindingSource;
-            this.comboBox5.DisplayMember = "nomeEquipa";
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(159, 221);
             this.comboBox5.Margin = new System.Windows.Forms.Padding(5);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(121, 21);
             this.comboBox5.TabIndex = 10;
-            this.comboBox5.ValueMember = "nomeEquipa";
-            // 
-            // equipasCentralBindingSource
-            // 
-            this.equipasCentralBindingSource.DataMember = "equipasCentral";
-            this.equipasCentralBindingSource.DataSource = this.pSIM1619I_MatteoCordero_2219132DataSet;
             // 
             // comboBox6
             // 
-            this.comboBox6.DataSource = this.equipasSudoesteBindingSource;
-            this.comboBox6.DisplayMember = "nomeEquipa";
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Location = new System.Drawing.Point(159, 250);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(121, 21);
             this.comboBox6.TabIndex = 11;
-            this.comboBox6.ValueMember = "nomeEquipa";
             // 
             // label6
             // 
@@ -294,55 +242,6 @@ namespace ProjetoM16
             this.pictureBox2.TabIndex = 23;
             this.pictureBox2.TabStop = false;
             // 
-            // equipasAtlanticoTableAdapter
-            // 
-            this.equipasAtlanticoTableAdapter.ClearBeforeFill = true;
-            // 
-            // equipasCentralTableAdapter
-            // 
-            this.equipasCentralTableAdapter.ClearBeforeFill = true;
-            // 
-            // equipasSudesteBindingSource
-            // 
-            this.equipasSudesteBindingSource.DataMember = "equipasSudeste";
-            this.equipasSudesteBindingSource.DataSource = this.pSIM1619I_MatteoCordero_2219132DataSet;
-            // 
-            // equipasSudesteTableAdapter
-            // 
-            this.equipasSudesteTableAdapter.ClearBeforeFill = true;
-            // 
-            // equipasNoroesteBindingSource
-            // 
-            this.equipasNoroesteBindingSource.DataMember = "equipasNoroeste";
-            this.equipasNoroesteBindingSource.DataSource = this.pSIM1619I_MatteoCordero_2219132DataSet;
-            // 
-            // equipasNoroesteTableAdapter
-            // 
-            this.equipasNoroesteTableAdapter.ClearBeforeFill = true;
-            // 
-            // equipasPacificoBindingSource
-            // 
-            this.equipasPacificoBindingSource.DataMember = "equipasPacifico";
-            this.equipasPacificoBindingSource.DataSource = this.pSIM1619I_MatteoCordero_2219132DataSet;
-            // 
-            // equipasPacificoTableAdapter
-            // 
-            this.equipasPacificoTableAdapter.ClearBeforeFill = true;
-            // 
-            // pSIM1619IMatteoCordero2219132DataSetBindingSource
-            // 
-            this.pSIM1619IMatteoCordero2219132DataSetBindingSource.DataSource = this.pSIM1619I_MatteoCordero_2219132DataSet;
-            this.pSIM1619IMatteoCordero2219132DataSetBindingSource.Position = 0;
-            // 
-            // equipasSudoesteBindingSource
-            // 
-            this.equipasSudoesteBindingSource.DataMember = "equipasSudoeste";
-            this.equipasSudoesteBindingSource.DataSource = this.pSIM1619IMatteoCordero2219132DataSetBindingSource;
-            // 
-            // equipasSudoesteTableAdapter
-            // 
-            this.equipasSudoesteTableAdapter.ClearBeforeFill = true;
-            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -371,15 +270,8 @@ namespace ProjetoM16
             this.Name = "Form4";
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Form4_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.equipasAtlanticoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pSIM1619I_MatteoCordero_2219132DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.equipasCentralBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.equipasSudesteBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.equipasNoroesteBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.equipasPacificoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pSIM1619IMatteoCordero2219132DataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.equipasSudoesteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -405,19 +297,7 @@ namespace ProjetoM16
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private PSIM1619I_MatteoCordero_2219132DataSet pSIM1619I_MatteoCordero_2219132DataSet;
-        private System.Windows.Forms.BindingSource equipasAtlanticoBindingSource;
-        private PSIM1619I_MatteoCordero_2219132DataSetTableAdapters.equipasAtlanticoTableAdapter equipasAtlanticoTableAdapter;
-        private System.Windows.Forms.BindingSource equipasCentralBindingSource;
-        private PSIM1619I_MatteoCordero_2219132DataSetTableAdapters.equipasCentralTableAdapter equipasCentralTableAdapter;
-        private System.Windows.Forms.BindingSource equipasSudesteBindingSource;
-        private PSIM1619I_MatteoCordero_2219132DataSetTableAdapters.equipasSudesteTableAdapter equipasSudesteTableAdapter;
-        private System.Windows.Forms.BindingSource equipasNoroesteBindingSource;
-        private PSIM1619I_MatteoCordero_2219132DataSetTableAdapters.equipasNoroesteTableAdapter equipasNoroesteTableAdapter;
-        private System.Windows.Forms.BindingSource equipasPacificoBindingSource;
-        private PSIM1619I_MatteoCordero_2219132DataSetTableAdapters.equipasPacificoTableAdapter equipasPacificoTableAdapter;
-        private System.Windows.Forms.BindingSource pSIM1619IMatteoCordero2219132DataSetBindingSource;
         private System.Windows.Forms.BindingSource equipasSudoesteBindingSource;
-        private PSIM1619I_MatteoCordero_2219132DataSetTableAdapters.equipasSudoesteTableAdapter equipasSudoesteTableAdapter;
+       
     }
 }

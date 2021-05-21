@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ProjetoM16
 {
     public partial class Form4 : Form
     {
+        SqlConnection conn = new SqlConnection(@"Data Source=devlabpm.westeurope.cloudapp.azure.com;Initial Catalog=PSIM1619I_MatteoCordero_2219132;Persist Security Info=True;User ID=PSIM1619I_MatteoCordero_2219132;Password=7bJ12028");
         public Form4()
         {
             InitializeComponent();
@@ -93,21 +95,39 @@ namespace ProjetoM16
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'pSIM1619I_MatteoCordero_2219132DataSet.equipasSudoeste' table. You can move, or remove it, as needed.
-            this.equipasSudoesteTableAdapter.Fill(this.pSIM1619I_MatteoCordero_2219132DataSet.equipasSudoeste);
-            // TODO: This line of code loads data into the 'pSIM1619I_MatteoCordero_2219132DataSet.equipasPacifico' table. You can move, or remove it, as needed.
-            this.equipasPacificoTableAdapter.Fill(this.pSIM1619I_MatteoCordero_2219132DataSet.equipasPacifico);
-            // TODO: This line of code loads data into the 'pSIM1619I_MatteoCordero_2219132DataSet.equipasNoroeste' table. You can move, or remove it, as needed.
-            this.equipasNoroesteTableAdapter.Fill(this.pSIM1619I_MatteoCordero_2219132DataSet.equipasNoroeste);
-            // TODO: This line of code loads data into the 'pSIM1619I_MatteoCordero_2219132DataSet.equipasSudeste' table. You can move, or remove it, as needed.
-            this.equipasSudesteTableAdapter.Fill(this.pSIM1619I_MatteoCordero_2219132DataSet.equipasSudeste);
-            // TODO: This line of code loads data into the 'pSIM1619I_MatteoCordero_2219132DataSet.equipasCentral' table. You can move, or remove it, as needed.
-            this.equipasCentralTableAdapter.Fill(this.pSIM1619I_MatteoCordero_2219132DataSet.equipasCentral);
-            // TODO: This line of code loads data into the 'pSIM1619I_MatteoCordero_2219132DataSet.equipasAtlantico' table. You can move, or remove it, as needed.
-            this.equipasAtlanticoTableAdapter.Fill(this.pSIM1619I_MatteoCordero_2219132DataSet.equipasAtlantico);
-        }
+            SqlConnection conn1 = new SqlConnection(conn.ConnectionString);
 
-      
+            if (conn1.State == System.Data.ConnectionState.Closed)
+            {
+                conn1.Open();
+            }
+            else
+            {
+                try
+                {
+                    using (conn1)
+                    {
+                        string sqlquery = "select NomeEquipa from Jogadores as J inner join EquipasJogadores as ej on ej.JogadorID = j.id inner join Equipas as e on e.id = ej.equipaid inner join divisoes as d on e.divisaoid = d.id where NomeDivisao = 'atlantico'";
+
+                        SqlCommand sqlcomm = new SqlCommand(sqlquery, conn1);
+                        comboBox1.Items.Add(sqlquery);
+                        
+
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show($"Falha na Conecção à BD:\n{ex.Message}", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    conn1.Close();
+                }
+
+            }
+
+
+        }
     }
 }
 
