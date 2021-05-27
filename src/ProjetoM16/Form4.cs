@@ -19,7 +19,7 @@ namespace ProjetoM16
             InitializeComponent();
         }
 
-
+      
         private void button2_Click(object sender, EventArgs e)
         {
             if (comboBox2.Text != null)
@@ -101,18 +101,21 @@ namespace ProjetoM16
             {
                 conn1.Open();
             }
-            else
-            {
+
                 try
                 {
                     using (conn1)
                     {
-                        string sqlquery = "select NomeEquipa from Jogadores as J inner join EquipasJogadores as ej on ej.JogadorID = j.id inner join Equipas as e on e.id = ej.equipaid inner join divisoes as d on e.divisaoid = d.id where NomeDivisao = 'atlantico'";
-
+                        string sqlquery = "select distinct NomeEquipa from Jogadores as J inner join EquipasJogadores as ej on ej.JogadorID = j.id inner join Equipas as e on e.id = ej.equipaid inner join divisoes as d on e.divisaoid = d.id where NomeDivisao = 'atlantico'";
                         SqlCommand sqlcomm = new SqlCommand(sqlquery, conn1);
-                        comboBox1.Items.Add(sqlquery);
-                        
 
+                        SqlDataReader dr = sqlcomm.ExecuteReader();
+                        DataTable dt = new DataTable();
+                        dt.Load(dr);                       
+                        comboBox1.DataSource = dt;
+                        comboBox1.DisplayMember = "NomeEquipa";
+                        comboBox1.ValueMember = "NomeEquipa";
+                        
                     }
                 }
                 catch (SqlException ex)
@@ -123,8 +126,6 @@ namespace ProjetoM16
                 {
                     conn1.Close();
                 }
-
-            }
 
 
         }
