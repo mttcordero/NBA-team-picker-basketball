@@ -115,8 +115,54 @@ namespace ProjetoM16
                         comboBox1.DataSource = dt;
                         comboBox1.DisplayMember = "NomeEquipa";
                         comboBox1.ValueMember = "NomeEquipa";
-                        
-                    }
+
+                        string sqlquery1 = "select distinct NomeEquipa from Jogadores as J inner join EquipasJogadores as ej on ej.JogadorID = j.id inner join Equipas as e on e.id = ej.equipaid inner join divisoes as d on e.divisaoid = d.id where NomeDivisao = 'central'";
+                        SqlCommand sqlcomm1 = new SqlCommand(sqlquery1, conn1);
+                        SqlDataReader dr1 = sqlcomm1.ExecuteReader();
+                        DataTable dt1 = new DataTable();
+                        dt1.Load(dr1);
+                        comboBox2.DataSource = dt1;
+                        comboBox2.DisplayMember = "NomeEquipa";
+                        comboBox2.ValueMember = "NomeEquipa";
+
+                        string sqlquery2 = "select distinct NomeEquipa from Jogadores as J inner join EquipasJogadores as ej on ej.JogadorID = j.id inner join Equipas as e on e.id = ej.equipaid inner join divisoes as d on e.divisaoid = d.id where NomeDivisao = 'sudeste'";
+                        SqlCommand sqlcomm2 = new SqlCommand(sqlquery2, conn1);
+                        SqlDataReader dr2 = sqlcomm1.ExecuteReader();
+                        DataTable dt2 = new DataTable();
+                        dt2.Load(dr2);
+                        comboBox3.DataSource = dt2;
+                        comboBox3.DisplayMember = "NomeEquipa";
+                        comboBox3.ValueMember = "NomeEquipa";
+
+                        string sqlquery3 = "select distinct NomeEquipa from Jogadores as J inner join EquipasJogadores as ej on ej.JogadorID = j.id inner join Equipas as e on e.id = ej.equipaid inner join divisoes as d on e.divisaoid = d.id where NomeDivisao = 'noroeste'";
+                        SqlCommand sqlcomm3 = new SqlCommand(sqlquery3, conn1);
+                        SqlDataReader dr3 = sqlcomm3.ExecuteReader();
+                        DataTable dt3 = new DataTable();
+                        dt3.Load(dr3);
+                        comboBox4.DataSource = dt3;
+                        comboBox4.DisplayMember = "NomeEquipa";
+                        comboBox4.ValueMember = "NomeEquipa";
+
+                        string sqlquery4 = "select distinct NomeEquipa from Jogadores as J inner join EquipasJogadores as ej on ej.JogadorID = j.id inner join Equipas as e on e.id = ej.equipaid inner join divisoes as d on e.divisaoid = d.id where NomeDivisao = 'pacifico'";
+                        SqlCommand sqlcomm4 = new SqlCommand(sqlquery4, conn1);
+                        SqlDataReader dr4 = sqlcomm4.ExecuteReader();
+                        DataTable dt4 = new DataTable();
+                        dt4.Load(dr4);
+                        comboBox5.DataSource = dt4;
+                        comboBox5.DisplayMember = "NomeEquipa";
+                        comboBox5.ValueMember = "NomeEquipa";
+
+                        string sqlquery5 = "select distinct NomeEquipa from Jogadores as J inner join EquipasJogadores as ej on ej.JogadorID = j.id inner join Equipas as e on e.id = ej.equipaid inner join divisoes as d on e.divisaoid = d.id where NomeDivisao = 'sudoeste'";
+                        SqlCommand sqlcomm5 = new SqlCommand(sqlquery5, conn1);
+                        SqlDataReader dr5 = sqlcomm5.ExecuteReader();
+                        DataTable dt5 = new DataTable();
+                        dt5.Load(dr5);
+                        comboBox6.DataSource = dt5;
+                        comboBox6.DisplayMember = "NomeEquipa";
+                        comboBox6.ValueMember = "NomeEquipa";
+
+
+                     }
                 }
                 catch (SqlException ex)
                 {

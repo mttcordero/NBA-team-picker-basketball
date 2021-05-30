@@ -18,20 +18,6 @@ namespace ProjetoM16
             InitializeComponent();
         }
 
-        private void btnTestar_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                string connectionString;
-                SqlConnection cnn;
-
-            }
-            catch(Exception)
-            {
-
-            }
-        }
-
         private void login_Click(object sender, EventArgs e)
         {
             //Form2 fnumero2 = new Form2();

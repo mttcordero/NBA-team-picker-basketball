@@ -34,8 +34,9 @@ namespace ProjetoM16
             // 
             // comboBox1
             // 
+            this.comboBox1.DisplayMember = "jogadores";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(250, 56);
+            this.comboBox1.Location = new System.Drawing.Point(66, 51);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(140, 21);
             this.comboBox1.TabIndex = 0;
@@ -47,7 +48,7 @@ namespace ProjetoM16
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(444, 306);
+            this.ClientSize = new System.Drawing.Size(266, 271);
             this.Controls.Add(this.comboBox1);
             this.Name = "equipas";
             this.Text = "equipas";
