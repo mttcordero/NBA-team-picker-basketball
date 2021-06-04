@@ -161,6 +161,7 @@
     <Content Include="Resources\nets.jpg" />
     <Content Include="Resources\nuggets.jpg" />
     <Content Include="Resources\pacers.jpg" />
+    <None Include="Resources\pelicans.png" />
     <Content Include="Resources\phoenix suns.jpg" />
     <Content Include="Resources\pistons.jpg" />
     <Content Include="Resources\raptors.jpg" />

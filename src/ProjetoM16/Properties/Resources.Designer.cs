@@ -283,6 +283,16 @@ namespace ProjetoM16.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pelicans {
+            get {
+                object obj = ResourceManager.GetObject("pelicans", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap phoenix_suns {
             get {
                 object obj = ResourceManager.GetObject("phoenix_suns", resourceCulture);

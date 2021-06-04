@@ -127,7 +127,7 @@ namespace ProjetoM16
 
                         string sqlquery2 = "select distinct NomeEquipa from Jogadores as J inner join EquipasJogadores as ej on ej.JogadorID = j.id inner join Equipas as e on e.id = ej.equipaid inner join divisoes as d on e.divisaoid = d.id where NomeDivisao = 'sudeste'";
                         SqlCommand sqlcomm2 = new SqlCommand(sqlquery2, conn1);
-                        SqlDataReader dr2 = sqlcomm1.ExecuteReader();
+                        SqlDataReader dr2 = sqlcomm2.ExecuteReader();
                         DataTable dt2 = new DataTable();
                         dt2.Load(dr2);
                         comboBox3.DataSource = dt2;

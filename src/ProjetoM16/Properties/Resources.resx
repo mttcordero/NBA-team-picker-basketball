@@ -181,6 +181,9 @@
   <data name="pacers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\pacers.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pelicans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pelicans.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="phoenix_suns" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\phoenix suns.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -201,6 +204,9 @@
   </data>
   <data name="trail_blazzers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\trail blazzers.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wizards" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizards.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_76ers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\76ers.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
