@@ -176,7 +176,7 @@ namespace ProjetoM16
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(96, 23);
             this.button2.TabIndex = 17;
-            this.button2.Text = "jogadores";
+            this.button2.Text = "procurar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -186,7 +186,7 @@ namespace ProjetoM16
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(96, 23);
             this.button3.TabIndex = 18;
-            this.button3.Text = "jogadores";
+            this.button3.Text = "procurar";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -227,7 +227,7 @@ namespace ProjetoM16
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(96, 23);
             this.button1.TabIndex = 16;
-            this.button1.Text = "jogadores";
+            this.button1.Text = "procurar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -235,6 +235,7 @@ namespace ProjetoM16
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(530, 347);
             this.Controls.Add(this.button6);
@@ -255,8 +256,10 @@ namespace ProjetoM16
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Form4";
             this.Text = "Form4";
+            this.TransparencyKey = System.Drawing.Color.White;
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.equipasSudoesteBindingSource)).EndInit();
             this.ResumeLayout(false);

@@ -20,12 +20,9 @@ namespace ProjetoM16
 
         private void login_Click(object sender, EventArgs e)
         {
-            //Form2 fnumero2 = new Form2();
-            //  this.Hide();
-            //fnumero2.ShowDialog();
-            Form4 fnumero4 = new Form4();
+            Form2 fnumero2 = new Form2();
             this.Hide();
-            fnumero4.ShowDialog();
+            fnumero2.ShowDialog();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

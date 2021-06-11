@@ -221,10 +221,21 @@ namespace ProjetoM16
         // por cada jogador, adicionar à combox ou fazer o databind da combobox aos resultados da consulta à bd.
 
 
-    
 
-  
+
+
         private void equipas_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'pSIM1619I_MatteoCordero_2219132DataSet.Jogadores' table. You can move, or remove it, as needed.
+            this.jogadoresTableAdapter.Fill(this.pSIM1619I_MatteoCordero_2219132DataSet.Jogadores);
+            // TODO: This line of code loads data into the 'pSIM1619I_MatteoCordero_2219132DataSet.Equipas' table. You can move, or remove it, as needed.
+            this.equipasTableAdapter.Fill(this.pSIM1619I_MatteoCordero_2219132DataSet.Equipas);
+            // TODO: This line of code loads data into the 'pSIM1619I_MatteoCordero_2219132DataSet.Jogadores' table. You can move, or remove it, as needed.
+
+            SqlConnection conn1 = new SqlConnection(conn.ConnectionString);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection conn1 = new SqlConnection(conn.ConnectionString);
 
@@ -237,18 +248,14 @@ namespace ProjetoM16
             {
                 using (conn1)
                 {
-       
-                        string sqlquery = "select Nome, Equipas.ID from Jogadores full outer join Equipas on equipas.ID = jogadores.id where Equipas.ID = @nomeE";
-                        
-                        SqlCommand sqlcomm = new SqlCommand(sqlquery, conn1);
-                        sqlcomm.Parameters.Add("@nomeE", SqlDbType.VarChar).Value = nomeE;
-                        SqlDataReader dr = sqlcomm.ExecuteReader();
-                        DataTable dt = new DataTable();
-                        dt.Load(dr);
-                        comboBox1.DataSource = dt;
-                        comboBox1.DisplayMember = "Nome";
-                        comboBox1.ValueMember = "Nome";
 
+
+                    SqlCommand sqlcomm = conn1.CreateCommand();
+                    sqlcomm.CommandType = CommandType.Text;
+                    sqlcomm.CommandText = "insert into jogadores values('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + textBox5.Text + "')";
+                    sqlcomm.ExecuteNonQuery();
+
+                    MessageBox.Show("insert sucesso!");
                 }
             }
             catch (SqlException ex)
@@ -261,6 +268,41 @@ namespace ProjetoM16
             }
         }
 
-     
+
+        private void button2_Click(object sender, EventArgs e)
+        {      
+                SqlConnection conn1 = new SqlConnection(conn.ConnectionString);
+
+                if (conn1.State == System.Data.ConnectionState.Closed)
+                {
+                    conn1.Open();
+                }
+
+                try
+                {
+                    using (conn1)
+                    {
+
+
+                        SqlCommand sqlcomm = conn1.CreateCommand();
+                        sqlcomm.CommandType = CommandType.Text;
+                        sqlcomm.CommandText = "delete from jogadores where nome = '" + textBox2.Text + "'";
+                        sqlcomm.ExecuteNonQuery();
+
+                        MessageBox.Show("delete sucesso!");
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show($"Falha na Conecção à BD:\n{ex.Message}", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    conn1.Close();
+                }
+            }
+
     }
-}
+    }
+
+    
