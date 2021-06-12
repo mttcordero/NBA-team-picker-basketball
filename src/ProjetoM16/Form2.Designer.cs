@@ -45,9 +45,8 @@ namespace ProjetoM16
             this.textBox1.Location = new System.Drawing.Point(147, 79);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(177, 19);
+            this.textBox1.Size = new System.Drawing.Size(148, 19);
             this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -59,9 +58,8 @@ namespace ProjetoM16
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(177, 19);
+            this.textBox2.Size = new System.Drawing.Size(148, 19);
             this.textBox2.TabIndex = 2;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // button1
             // 
@@ -76,7 +74,7 @@ namespace ProjetoM16
             this.button1.Location = new System.Drawing.Point(42, 184);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(282, 47);
+            this.button1.Size = new System.Drawing.Size(273, 47);
             this.button1.TabIndex = 3;
             this.button1.Text = "login";
             this.button1.UseVisualStyleBackColor = false;
@@ -90,7 +88,6 @@ namespace ProjetoM16
             this.button2.TabIndex = 4;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form2
             // 
@@ -105,7 +102,6 @@ namespace ProjetoM16
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Form2";
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
