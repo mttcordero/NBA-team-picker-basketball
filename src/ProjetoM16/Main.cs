@@ -162,14 +162,19 @@ namespace ProjetoM16
 
         private void button6_Click(object sender, EventArgs e)
         {
-            if (comboBox6.Text != null)
+            if (comboBox5.Text != null)
             {
                 equipas fequipas5 = new equipas();
-                fequipas5.NomeEquipa = comboBox6.Text.ToLowerInvariant();
+                fequipas5.NomeEquipa = comboBox5.Text.ToLowerInvariant();
                 fequipas5.Configurar();
                 this.Hide();
                 fequipas5.ShowDialog();
             }
+        }
+
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
