@@ -55,6 +55,7 @@ namespace ProjetoM16
             this.equipasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.equipasTableAdapter = new ProjetoM16.PSIM1619I_MatteoCordero_2219132DataSetTableAdapters.EquipasTableAdapter();
             this.jogadoresTableAdapter = new ProjetoM16.PSIM1619I_MatteoCordero_2219132DataSetTableAdapters.JogadoresTableAdapter();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jogadoresBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pSIM1619I_MatteoCordero_2219132DataSet)).BeginInit();
@@ -202,7 +203,7 @@ namespace ProjetoM16
             this.dataGridView1.DataSource = this.jogadoresBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(311, 61);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(371, 253);
+            this.dataGridView1.Size = new System.Drawing.Size(377, 253);
             this.dataGridView1.TabIndex = 18;
             // 
             // dataGridViewTextBoxColumn1
@@ -263,12 +264,22 @@ namespace ProjetoM16
             // 
             this.jogadoresTableAdapter.ClearBeforeFill = true;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(225, 288);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 26);
+            this.button3.TabIndex = 19;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // equipas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(733, 377);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -330,5 +341,6 @@ namespace ProjetoM16
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.Button button3;
     }
 }
