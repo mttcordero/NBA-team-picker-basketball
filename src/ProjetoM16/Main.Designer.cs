@@ -243,6 +243,8 @@ namespace ProjetoM16
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Main";
             this.Text = "form4";
             this.Load += new System.EventHandler(this.Main_Load);

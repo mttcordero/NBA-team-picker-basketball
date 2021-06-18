@@ -41,11 +41,15 @@ namespace ProjetoM16
 
                     SqlCommand sqlcomm2 = conn1.CreateCommand();
                     sqlcomm2.CommandType = CommandType.Text;
-                    sqlcomm2.CommandText = "insert into Utilizadores values('" + textBox4.Text + "','" + textBox5.Text + "','" + textBox8.Text + "')";
+                    sqlcomm2.CommandText = "insert into Utilizadores values('" + textBox5.Text + "','" + textBox4.Text + "')";
                     sqlcomm.ExecuteNonQuery();
                     sqlcomm2.ExecuteNonQuery();
 
-                     MessageBox.Show("insert sucesso!");
+                    MessageBox.Show("insert sucesso!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("as passwords tem de ser identicas");
                     }
                 }
             }

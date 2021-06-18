@@ -64,7 +64,6 @@ namespace ProjetoM16
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "My Manager 2k21";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // pictureBox2
             // 
@@ -90,9 +89,10 @@ namespace ProjetoM16
             this.Controls.Add(this.login);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

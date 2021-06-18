@@ -210,8 +210,8 @@ namespace ProjetoM16
                 BackgroundImage = Resources.trail_blazzers;
             }
 
-            Width = BackgroundImage.Width;
-            Height = BackgroundImage.Height;
+//            Width = BackgroundImage.Width;
+//            Height = BackgroundImage.Height;
 
         }
 

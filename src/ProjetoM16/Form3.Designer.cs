@@ -66,12 +66,12 @@ namespace ProjetoM16
             // 
             this.textBox3.Location = new System.Drawing.Point(134, 132);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(240, 20);
+            this.textBox3.Size = new System.Drawing.Size(235, 20);
             this.textBox3.TabIndex = 3;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(169, 170);
+            this.textBox4.Location = new System.Drawing.Point(174, 170);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(240, 20);
             this.textBox4.TabIndex = 4;
@@ -187,7 +187,7 @@ namespace ProjetoM16
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(134, 92);
+            this.textBox2.Location = new System.Drawing.Point(134, 90);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(235, 20);
             this.textBox2.TabIndex = 16;
@@ -237,7 +237,7 @@ namespace ProjetoM16
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(435, 322);
+            this.ClientSize = new System.Drawing.Size(429, 322);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -257,6 +257,8 @@ namespace ProjetoM16
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form3";
             this.Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
