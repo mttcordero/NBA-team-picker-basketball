@@ -46,6 +46,11 @@ namespace ProjetoM16
                     sqlcomm2.ExecuteNonQuery();
 
                     MessageBox.Show("insert sucesso!");
+
+                    Main main = new Main();
+                    this.Hide();
+                    main.ShowDialog();
+
                     }
                     else
                     {
