@@ -1,0 +1,203 @@
+use PSIM1619I_MatteoCordero_2219132;
+
+insert into Divisoes values ('1','atlantico')
+insert into Divisoes values ('2','central')
+insert into Divisoes values ('3','sudeste')
+insert into Divisoes values ('4','noroeste')
+insert into Divisoes values ('5','pacifico')
+insert into Divisoes values ('6','sudoeste')
+
+update Divisoes 
+set id = 3, NomeDivisao = 'sudeste'
+where ID = 3
+
+insert into Equipas values ('1','Boston Celtics','1') 
+insert into Equipas values ('2','Brooklyn Netss','1') 
+insert into Equipas values ('3','New York Knicks','1') 
+insert into Equipas values ('4','Philadelphia 76ers','1') 
+insert into Equipas values ('5','Toronto Raptors','1')
+
+insert into Equipas values ('6','Chicago Bulls','2') 
+insert into Equipas values ('7','Cleveland Cavaliers','2') 
+insert into Equipas values ('8','Detroit Pistons','2') 
+insert into Equipas values ('9','Indiana Pacers','2') 
+insert into Equipas values ('10','Milwaukee Bucks','2') 
+
+insert into Equipas values ('11','Atlanta Hawks','3') 
+insert into Equipas values ('12','Charlotte Hornets','3') 
+insert into Equipas values ('13','Miami Heat','3') 
+insert into Equipas values ('14','Orlando Magic','3') 
+insert into Equipas values ('15','Washington Wizards','3') 
+
+insert into Equipas  values ('16','Denver Nuggets','4') 
+insert into Equipas  values ('17','Minnesota Timberwolves','4') 
+insert into Equipas  values ('18','Oklahoma City Thunder','4') 
+insert into Equipas  values ('19','Portland Trail Blazers','4') 
+insert into Equipas  values ('20','Utah Jazz','4') 
+
+insert into Equipas  values ('21','Golden State Warriors','5') 
+insert into Equipas  values ('22','LA Clippers','5') 
+insert into Equipas  values ('23','Los Angeles Lakers','5') 
+insert into Equipas  values ('24','Phoenix Suns','5') 
+insert into Equipas  values ('25','Sacramento Kings','5') 
+
+insert into Equipas  values ('26','Dallas Mavericks','6') 
+insert into Equipas  values ('27','Houston Rockets','6') 
+insert into Equipas  values ('28','Memphis Grizzlies','6') 
+insert into Equipas  values ('29','New Orleans Pelicans','6') 
+insert into Equipas  values ('30','San Antonio Spurs','6') 
+
+
+
+insert into jogadores values ('2','Carsen Edwards','1','E.U','Ar','1.80 m','90 kg','Celtics')
+insert into jogadores values ('3','Tacko Fall','1','Senegal','P','2.26 m','141.1 kg','Celtics')
+insert into jogadores values ('4','Luke Kornet','1','E.U','Al-P','2.18 m','113.4 kg','Celtics')
+insert into Jogadores values ('5','Semi Ojeleye','1','E.U','Al','1.98 m','108.9 kg','Celtics')
+
+insert into jogadores values ('6','Bruce Brown','2','E.U','Al-Ar','1.93 m','91 kg','Nets')
+insert into jogadores values ('7','James Harden','2','E.U','Ar','1.96 m','99.8 kg','Nets')
+insert into jogadores values ('8','DeAndre Jordan','2','E.U','P','2.11 m','120.2 kg','Nets')
+insert into jogadores values ('9','Nicolas Claxton','2','E.U','Al-P','2.11 m','97.5 kg','Nets')
+insert into Jogadores values ('10','Kevin Durant','2','E.U','Al','2.18 m','108.9 kg','Nets')
+
+
+insert into jogadores values ('1','Jaylen Brown','California','1.98 m','101.2 kg')
+insert into EquipasJogadores values ('1','1','1','7','Al-AR')
+
+insert into jogadores values ('2','Carsen Edwards','Purdue','1.80 m','101.2 kg')
+insert into EquipasJogadores values ('2','2','1','4','Ar')
+
+insert into jogadores values ('3','Tacko Fall','UCF','2.26 m','141 kg')
+insert into EquipasJogadores values ('3','3','1','99','P')
+
+insert into jogadores values ('4','James Harden','Arizona State','1.96 m','99.8 kg')
+insert into EquipasJogadores values ('4','4','2','13','Ar')
+
+insert into jogadores values ('5','Derrick Rose','Memphis','1.88 m','91 kg')
+insert into EquipasJogadores values ('5','5','3','39','Pg')
+
+insert into jogadores values ('6','Dwight Howard','','2.08 m','120 kg')
+insert into EquipasJogadores values ('6','6','4','24','P')
+
+insert into jogadores values ('7','Kyle Lowry','Villanova','1.83 m','88 kg')
+insert into EquipasJogadores values ('7','7','5','7','PG')
+
+
+delete from EquipasJogadores where id < 100
+delete from jogadores where id < 100
+
+update Jogadores
+set pais = 'SENEGAL'
+WHERE ID = 3;
+
+select Nome, Equipas.ID
+from Jogadores
+full outer join Equipas
+on equipas.ID = jogadores.id
+where Equipas.ID = 4
+
+select *
+from EquipasJogadores
+select *
+from Equipas
+select * 
+from Jogadores
+
+select distinct NomeEquipa from Jogadores as J
+inner join EquipasJogadores as ej on ej.JogadorID = j.id
+inner join Equipas as e on e.id = ej.equipaid
+inner join divisoes as d on e.divisaoid = d.id
+where NomeDivisao = ''
+
+
+insert into jogadores values ('8','Troy Brown Jr','Oregon','1.98 m','97 kg')
+insert into EquipasJogadores values ('8','8','6','6','A')
+
+insert into jogadores values ('9','	Jarrett Allen','Texas','2.11 m','110 kg')
+insert into EquipasJogadores values ('9','9','7','31','C')
+
+//
+insert into jogadores values ('10','Hamidou Diallo','Kentucky','1.96 m','91 kg')
+insert into EquipasJogadores values ('10','10','8','3','C')
+
+insert into jogadores values ('11','Caris LeVert','Michigan','1.98 m','92 kg')
+insert into EquipasJogadores values ('11','11','9','22','SG')
+
+insert into jogadores values ('12','Giannis Antetokounmpo','','2.11 m','109 kg')
+insert into EquipasJogadores values ('12','12','10','34','PF')
+
+
+//
+
+
+insert into jogadores values ('13','Kevin Huerter','Maryland','2.11 m','109 kg')
+insert into EquipasJogadores values ('13','13','11','34','PF')
+
+insert into jogadores values ('14','LaMelo Ball','','1.98 m','81 kg')
+insert into EquipasJogadores values ('14','14','12','2','PG')
+
+insert into jogadores values ('15','Trevor Ariza','UCLA','2.03 m','97 kg')
+insert into EquipasJogadores values ('15','15','13','8','SF')
+
+insert into jogadores values ('16','Mo Bamba','Texas','2.13 m','104 kg')
+insert into EquipasJogadores values ('16','16','14','5','C')
+
+insert into jogadores values ('17','Russell Westbrook','UCLA','1.91 m','90 kg')
+insert into EquipasJogadores values ('17','17','15','4','PG')
+
+//
+
+insert into jogadores values ('18','Will Barton','UCLA','1.91 m','90 kg')
+insert into EquipasJogadores values ('18','18','16','88','SF')
+
+insert into jogadores values ('19','Ed Davis','UCLA','1.91 m','90 kg')
+insert into EquipasJogadores values ('19','19','17','6','C')
+
+insert into jogadores values ('20','Charlie Brown Jr.','UCLA','1.91 m','90 kg')
+insert into EquipasJogadores values ('20','20','18','7','A')
+
+insert into jogadores values ('21','Carmelo Anthony','UCLA','1.91 m','90 kg')
+insert into EquipasJogadores values ('21','21','19','11','PF')
+
+insert into jogadores values ('22','Mike Conley','UCLA','1.91 m','90 kg')
+insert into EquipasJogadores values ('22','22','20','4','PG')
+
+//
+
+insert into jogadores values ('23','Stephen Curry','Davidson','1.91 m','90 kg')
+insert into EquipasJogadores values ('23','23','21','7','PG')
+
+insert into jogadores values ('24','Nicolas Batum','','1.91 m','90 kg')
+insert into EquipasJogadores values ('24','24','22','9','C')
+
+insert into jogadores values ('25','Kostas Antetokounmpo','Dayton','1.91 m','90 kg')
+insert into EquipasJogadores values ('25','25','23','55','A')
+
+insert into jogadores values ('26','Deandre Ayton','UCLA','1.91 m','90 kg')
+insert into EquipasJogadores values ('26','26','24','11','C')
+
+insert into jogadores values ('27','Kyle Guy','UCLA','1.91 m','90 kg')
+insert into EquipasJogadores values ('27','27','25','4','SG')
+
+//
+
+insert into jogadores values ('28','Tyler Bey','Davidson','1.91 m','90 kg')
+insert into EquipasJogadores values ('28','28','26','7','PG')
+
+insert into jogadores values ('29','D.J. Augustin','','1.91 m','90 kg')
+insert into EquipasJogadores values ('29','29','27','9','C')
+
+insert into jogadores values ('30','Grayson Allen','Dayton','1.91 m','90 kg')
+insert into EquipasJogadores values ('30','30','28','55','A')
+
+insert into jogadores values ('31','Lonzo Ball','UCLA','1.91 m','90 kg')
+insert into EquipasJogadores values ('31','31','29','11','C')
+
+insert into jogadores values ('32','Gorgui Dieng','UCLA','1.91 m','90 kg')
+insert into EquipasJogadores values ('32','32','30','4','SG')
+
+insert into Utilizadores values ('1','1234','admin');
+
+Select * from Utilizadores WHERE nomeUser = 'admin' and password = '1234';
+
+Select * from novos_utilizadores
