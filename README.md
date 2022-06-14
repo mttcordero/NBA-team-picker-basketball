@@ -1,1 +1,3 @@
-# PSI2019I_MatteoCordero_2219
+A project developed with C# and visual studio
+
+by Matteo Cordero 
